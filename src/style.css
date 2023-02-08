@@ -1,0 +1,246 @@
+.container {
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+  max-width: 800px;
+  padding: 30px 0px;
+  border-radius: 20px;
+  background: linear-gradient(
+    180deg,
+    #fefffc 18.08%,
+    rgba(235, 255, 156, 0) 200.17%
+  );
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.1));
+}
+h1 {
+  text-align: center;
+  color: #13437b;
+  font-size: 36px;
+  padding: 30px 0;
+}
+h3 {
+  font-family: "Overpass";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: #13437b;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+  padding-top: 24px;
+}
+h4 {
+  font-size: 40px;
+  text-align: center;
+  padding-top: 16px;
+  padding-bottom: 24px;
+}
+h5 {
+  font-family: "Overpass";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: #13437b;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+}
+.form-city {
+  width: 400px;
+  height: 48px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  float: left;
+  margin-left: 145px;
+  margin-right: 17px;
+  padding-left: 15px;
+}
+button.searchButton {
+  background: #13437b;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  width: 94px;
+  height: 48px;
+  border: none;
+  font-family: "Overpass";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 20px;
+  line-height: 20px;
+  color: #fffbfb;
+  float: right;
+}
+
+button.currentButton {
+  background: #e6eef3;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  border-color: #13437b;
+  width: 120px;
+  height: 32px;
+  border: none;
+  font-family: "Overpass";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 20px;
+  color: #0a192b;
+  margin-right: 48px;
+}
+
+.search {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+}
+.row {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.row-module {
+  margin-top: 48px;
+  list-style-type: none;
+  font-family: "Overpass";
+}
+.column-one {
+  margin-left: 18px;
+}
+.column-two {
+  margin-right: 0px;
+  margin-left: 50px;
+}
+.column-four {
+  margin-right: 0px;
+  margin-top: 10px;
+  max-width: 200px;
+}
+.humidity {
+  width: 200px;
+}
+.wind {
+  width: 200px;
+}
+.NewYork {
+  font-size: 32px;
+  width: 188px;
+  color: #13437b;
+  font-family: "Overpass";
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.sat {
+  color: #4a4a4a;
+  width: 153px;
+}
+.sunny {
+  color: #4a4a4a;
+  width: 200px;
+}
+.degrees {
+  color: #13437b;
+  font-family: "Overpass";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 100px;
+  line-height: 100px;
+}
+.incelsius {
+  color: #13437b;
+  font-size: 24px;
+  margin-top: -20px;
+  margin-right: 0px;
+  margin-left: -20px;
+}
+
+.days {
+  display: flex;
+}
+.date:first-letter {
+  text-transform: capitalize;
+}
+.sunny:first-letter {
+  text-transform: capitalize;
+}
+
+.Sunday {
+  display: block;
+  width: 135px;
+  height: 180px;
+  margin-left: 48px;
+  top: 404px;
+  background: #fdfff5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+.Monday {
+  display: block;
+  width: 135px;
+  height: 180px;
+  margin-left: 6px;
+  top: 404px;
+  background: #fdfff5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+.Tuesday {
+  display: block;
+  width: 135px;
+  height: 180px;
+  margin-left: 6px;
+  top: 404px;
+  background: #fdfff5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+.Wednesday {
+  display: block;
+  width: 135px;
+  height: 180px;
+  margin-left: 6px;
+  top: 404px;
+  background: #fdfff5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+.Thursday {
+  display: block;
+  width: 135px;
+  height: 180px;
+  margin-left: 6px;
+  margin-right: 48px;
+  top: 404px;
+  background: #fdfff5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+p {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px 48px;
+  gap: 24px;
+  width: 800px;
+  height: 20px;
+  left: 0px;
+  margin-top: 48px;
+  font-family: "Overpass";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 20px;
+  color: #4a4a4a;
+}
+.cities {
+  color: #13437b;
+  font-weight: 400;
+}
+h6 {
+  font-family: "Overpass";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 16px;
+  color: #4a4a4a;
+  text-align: center;
+  margin-top: 30px;
+}
