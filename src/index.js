@@ -35,8 +35,14 @@ function displayTemperature(response) {
   windEl.innerHTML = response.data.wind.speed;
   let dateEl = document.querySelector("li.date");
   dateEl.innerHTML = formatDate(response.data.time * 1000);
+  let iconEl = document.querySelector("#icon");
+  iconEl.setAttribute(
+    "src",
+    `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon}.png`
+  );
+  iconEl.setAttribute("alt", response.data.condition.description);
 }
 let apiKey = "0d8a45bc34b38f19a974t8f13fco40ba";
-let city = "Boston";
+let city = "Berlin";
 let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
 axios.get(apiUrl).then(displayTemperature);

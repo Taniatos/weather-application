@@ -134,7 +134,8 @@ button.currentButton {
 }
 .descr {
   color: #4a4a4a;
-  width: 200px;
+  width: 500px;
+  margin-top: 8px;
 }
 .temp {
   color: #13437b;
@@ -163,7 +164,13 @@ button.currentButton {
 .descr:first-letter {
   text-transform: capitalize;
 }
-
+.descrImage {
+  display: flex;
+  width: 600px;
+}
+img {
+  float: inline-start;
+}
 .Sunday {
   display: block;
   width: 135px;
