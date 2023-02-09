@@ -121,9 +121,9 @@ button.currentButton {
 .wind {
   width: 200px;
 }
-.NewYork {
-  font-size: 32px;
-  width: 188px;
+.city {
+  font-size: 28px;
+  width: 300px;
   color: #13437b;
   font-family: "Overpass";
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -132,24 +132,26 @@ button.currentButton {
   color: #4a4a4a;
   width: 153px;
 }
-.sunny {
+.descr {
   color: #4a4a4a;
   width: 200px;
 }
-.degrees {
+.temp {
   color: #13437b;
   font-family: "Overpass";
   font-style: normal;
   font-weight: 500;
-  font-size: 100px;
+  font-size: 90px;
   line-height: 100px;
+  text-align: right;
 }
 .incelsius {
   color: #13437b;
   font-size: 24px;
-  margin-top: -20px;
+  margin-top: -15px;
   margin-right: 0px;
-  margin-left: -20px;
+  margin-left: -10px;
+  text-align: left;
 }
 
 .days {
@@ -158,7 +160,7 @@ button.currentButton {
 .date:first-letter {
   text-transform: capitalize;
 }
-.sunny:first-letter {
+.descr:first-letter {
   text-transform: capitalize;
 }
 
