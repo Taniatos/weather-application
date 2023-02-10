@@ -42,7 +42,17 @@ function displayTemperature(response) {
   );
   iconEl.setAttribute("alt", response.data.condition.description);
 }
-let apiKey = "0d8a45bc34b38f19a974t8f13fco40ba";
-let city = "Berlin";
-let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
-axios.get(apiUrl).then(displayTemperature);
+function search(city) {
+  let apiKey = "0d8a45bc34b38f19a974t8f13fco40ba";
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayTemperature);
+}
+function searchSubmit(event) {
+  event.preventDefault();
+  let cityInputEl = document.querySelector("#cityInput");
+  search(cityInputEl.value);
+}
+search("New York");
+
+let form = document.querySelector("#formOne");
+form.addEventListener("submit", searchSubmit);
