@@ -21,7 +21,30 @@ function formatDate(timestamp) {
   let day = days[date.getDay()];
   return `${day} ${hours}:${minutes}`;
 }
+function displayForecast() {
+  let forecastEl = document.querySelector("#forecast");
+  let forecastHTML = "";
+  let days = ["Thu", "Fri", "Sat", "Sun", "Mon"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+      <div class="weekDays" id="dayOne">
+        <h3>${day}</h3>
+        <h4><img
+          src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/few-clouds-day.png"
+          alt=""
+          id="icon"
+          width = 80px;
+          /></h4>
+        <h5><span id="temp-max">8</span>° <span id="temp-min"> 6</span>°</h5>
+      </div>`;
+    
+  })
+  
 
+  forecastEl.innerHTML = forecastHTML;
+}
 function displayTemperature(response) {
   let temperatureEl = document.querySelector("li.temp");
   temperatureEl.innerHTML = Math.round(response.data.temperature.current);
@@ -35,7 +58,7 @@ function displayTemperature(response) {
   let humidityEl = document.querySelector("strong.humidity");
   humidityEl.innerHTML = response.data.temperature.humidity;
   let windEl = document.querySelector("strong.speed");
-  windEl.innerHTML = response.data.wind.speed;
+  windEl.innerHTML = Math.round(response.data.wind.speed);
   let dateEl = document.querySelector("li.date");
   dateEl.innerHTML = formatDate(response.data.time * 1000);
   let iconEl = document.querySelector("#icon");
@@ -80,5 +103,5 @@ fahrenheitLink.addEventListener("click", showFahrTemp);
 
 let celsiusLink = document.querySelector("#celsius");
 celsiusLink.addEventListener("click", showCelsiusTemp);
-
+displayForecast();
 search("New York");

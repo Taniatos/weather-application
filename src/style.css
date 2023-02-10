@@ -2,8 +2,8 @@
   display: block;
   margin: 0 auto;
   margin-top: 30px;
-  max-width: 800px;
-  padding: 30px 0px;
+  max-width: 780px;
+  padding: 30px 30px;
   border-radius: 20px;
   background: linear-gradient(
     180deg,
@@ -32,8 +32,8 @@ h3 {
 h4 {
   font-size: 40px;
   text-align: center;
-  padding-top: 16px;
-  padding-bottom: 24px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 h5 {
   font-family: "Overpass";
@@ -52,7 +52,7 @@ h5 {
   border-radius: 5px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   float: left;
-  margin-left: 145px;
+  margin-left: 100px;
   margin-right: 17px;
   padding-left: 15px;
 }
@@ -95,7 +95,7 @@ button.currentButton {
   margin: 0 auto;
 }
 .row {
-  max-width: 800px;
+  max-width: 730px;
   margin: 0 auto;
 }
 .row-module {
@@ -104,7 +104,7 @@ button.currentButton {
   font-family: "Overpass";
 }
 .column-one {
-  margin-left: 18px;
+  margin-left: 0px;
 }
 .column-two {
   margin-right: 0px;
@@ -189,21 +189,9 @@ img {
   border-radius: 20px;
 }
 #dayOne {
-  margin-left: 48px;
+  margin-left: 10px;
 }
-#dayTwo {
-  margin-left: 6px;
-}
-#dayThree {
-  margin-left: 6px;
-}
-#dayFour {
-  margin-left: 6px;
-}
-#dayFive {
-  margin-left: 6px;
-  margin-right: 48px;
-}
+
 #temp-max {
   font-weight: bold;
 }
