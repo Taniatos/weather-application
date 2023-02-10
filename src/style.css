@@ -179,56 +179,33 @@ button.currentButton {
 img {
   float: inline-start;
 }
-.Sunday {
+.weekDays {
   display: block;
   width: 135px;
   height: 180px;
+  top: 404px;
+  background: #fdfff5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+#dayOne {
   margin-left: 48px;
-  top: 404px;
-  background: #fdfff5;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
-  border-radius: 20px;
 }
-.Monday {
-  display: block;
-  width: 135px;
-  height: 180px;
+#dayTwo {
   margin-left: 6px;
-  top: 404px;
-  background: #fdfff5;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
-  border-radius: 20px;
 }
-.Tuesday {
-  display: block;
-  width: 135px;
-  height: 180px;
+#dayThree {
   margin-left: 6px;
-  top: 404px;
-  background: #fdfff5;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
-  border-radius: 20px;
 }
-.Wednesday {
-  display: block;
-  width: 135px;
-  height: 180px;
+#dayFour {
   margin-left: 6px;
-  top: 404px;
-  background: #fdfff5;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
-  border-radius: 20px;
 }
-.Thursday {
-  display: block;
-  width: 135px;
-  height: 180px;
+#dayFive {
   margin-left: 6px;
   margin-right: 48px;
-  top: 404px;
-  background: #fdfff5;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
-  border-radius: 20px;
+}
+#temp-max {
+  font-weight: bold;
 }
 p {
   display: flex;
