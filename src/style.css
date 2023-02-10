@@ -110,6 +110,14 @@ button.currentButton {
   margin-right: 0px;
   margin-left: 50px;
 }
+.column-three .active {
+  color: #4a4a4a;
+  cursor: default;
+  text-decoration: none;
+}
+.column-three .active:hover {
+  text-decoration: none;
+}
 .column-four {
   margin-right: 0px;
   margin-top: 10px;
