@@ -178,6 +178,7 @@ button.currentButton {
 }
 img {
   float: inline-start;
+  margin-left: -10px;
 }
 .weekDays {
   display: block;
@@ -194,6 +195,10 @@ img {
 
 #temp-max {
   font-weight: bold;
+}
+#temp-min-all {
+  color: #4a4a4a;
+  font-weight:200;
 }
 p {
   display: flex;
