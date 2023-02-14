@@ -108,7 +108,7 @@ button.currentButton {
 }
 .column-two {
   margin-right: 0px;
-  margin-left: 50px;
+  margin-left: 80px;
 }
 .column-three .active {
   color: #4a4a4a;
@@ -118,8 +118,8 @@ button.currentButton {
 .column-three .active:hover {
   text-decoration: none;
 }
-.column-four {
-  margin-right: 0px;
+.column-three {
+  margin-left: 100px;
   margin-top: 10px;
   max-width: 200px;
 }
@@ -157,9 +157,9 @@ button.currentButton {
 .incelsius {
   color: #13437b;
   font-size: 24px;
-  margin-top: -15px;
-  margin-right: 0px;
-  margin-left: -10px;
+  width: 200px;
+
+
   text-align: left;
 }
 
@@ -195,10 +195,20 @@ img {
 
 #temp-max {
   font-weight: bold;
+  position:relative;
+  right:6px;
 }
 #temp-min-all {
   color: #4a4a4a;
   font-weight:200;
+  position:relative;
+  left:6px;
+}
+#celsiusC {
+  font-size: 12px;
+  position:relative;
+  top:-6px;
+
 }
 p {
   display: flex;
@@ -220,6 +230,10 @@ p {
 .cities {
   color: #13437b;
   font-weight: 400;
+  
+}
+.a #boston #sanFrancisco #chicago #houston {
+text-decoration: none;
 }
 h6 {
   font-family: "Overpass";

@@ -35,7 +35,6 @@ function formatDay(timestamp) {
     "Saturday",
   ];
   return days[day];
-
 }
 function displayForecast(response) {
   let forecast = response.data.daily;
@@ -58,9 +57,9 @@ function displayForecast(response) {
           /></h4>
         <h5><span id="temp-max">${Math.round(
           forecastDay.temperature.maximum
-        )}</span>° <span id="temp-min-all"><span id="temp-min">   ${Math.round(
+        )}</span><span id="celsiusC">℃</span><span id="temp-min-all"><span id="temp-min">${Math.round(
           forecastDay.temperature.minimum
-        )}</span>°</span></h5>
+        )}</span><span id="celsiusC">℃</span></span></h5>
       </div>`;
     }
   });
@@ -135,3 +134,35 @@ let celsiusLink = document.querySelector("#celsius");
 celsiusLink.addEventListener("click", showCelsiusTemp);
 
 search("New York");
+
+function checkOutBoston(boston) {
+  let apiKey = "0d8a45bc34b38f19a974t8f13fco40ba";
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=Boston&key=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayTemperature);
+}
+let bostonLink = document.querySelector("#boston");
+bostonLink.addEventListener("click", checkOutBoston);
+
+function checkOutSanFrancisco(sanFrancisco) {
+  let apiKey = "0d8a45bc34b38f19a974t8f13fco40ba";
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=San%20Francisco&key=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayTemperature);
+}
+let sanFranciscoLink = document.querySelector("#sanFrancisco");
+sanFranciscoLink.addEventListener("click", checkOutSanFrancisco);
+
+function checkOutChicago(chicago) {
+  let apiKey = "0d8a45bc34b38f19a974t8f13fco40ba";
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=Chicago&key=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayTemperature);
+}
+let chicagoLink = document.querySelector("#chicago");
+chicagoLink.addEventListener("click", checkOutChicago);
+
+function checkOutHouston(houston) {
+  let apiKey = "0d8a45bc34b38f19a974t8f13fco40ba";
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=Houston&key=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayTemperature);
+}
+let houstonLink = document.querySelector("#houston");
+houstonLink.addEventListener("click", checkOutHouston);
